@@ -1,0 +1,37 @@
+1. Explain the fundamental data types in Dart (int, double, String, List, Map, etc.) and their uses.
+ANS:
+Dart is the programming language used in Flutter for mobile app development. 
+It provides several fundamental data types:
+int: Used to store whole numbers such as 10, 25, -3.
+double: Used to store decimal numbers such as 10.5, 3.14.
+String: Used to store text or characters like names and messages.
+bool: Stores only two values: true or false.
+List: Used to store multiple values in a single variable in ordered form.
+Map: Stores data in key–value pairs, useful for structured data.
+
+2. Describe control structures in Dart with examples of if, else, for, while, and switch.
+ANS:
+Control structures are used to control the flow of execution in a program.
+if statement: Executes a block of code if a condition is true.
+else statement: Executes when the if condition is false.
+for loop: Repeats a block of code for a fixed number of times.
+while loop: Repeats a block of code as long as the condition is true.
+switch statement: Used to select one block of code from multiple options based on a value.
+
+3. Explain object-oriented programming concepts in Dart, such as classes, inheritance,
+polymorphism, and interfaces.
+ANS:
+Dart follows Object-Oriented Programming (OOP) principles.
+Class: A blueprint used to create objects. It defines properties and methods.
+Object: An instance of a class.
+Inheritance: Allows one class to inherit properties and methods from another class using the extends keyword.
+Polymorphism: Allows methods to have different implementations in different classes.
+Interface: In Dart, every class can act as an interface using the implements keyword.
+
+4. Describe asynchronous programming in Dart, including Future, async, await, and Stream.
+ANS:
+Asynchronous programming allows tasks to run without blocking the main program execution. It is useful for tasks like API calls and database operations.
+Future: Represents a value that will be available in the future.
+async: Used to define an asynchronous function.
+await: Pauses execution until a Future is completed.
+Stream: Used to handle multiple asynchronous values over time.
