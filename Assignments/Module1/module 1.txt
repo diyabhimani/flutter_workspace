@@ -1,0 +1,39 @@
+1. Explain the benefits of using Flutter over other cross-platform frameworks.
+ANS: Single codebase for Android & iOS
+     Fast development with Hot Reload
+     Beautiful UI with built-in widgets
+     High performance (compiled to native code)
+     Strong community support by Google
+
+2. Describe the role of Dart in Flutter. What are its advantages for mobile development?
+ANS: Flutter apps are written in Dart.
+
+Advantages of Dart:
+Easy to learn
+Fast compilation
+Supports OOP (Object Oriented Programming)
+Good performance for mobile apps
+Null safety (reduces errors)
+
+3. Outline the steps to set up a Flutter development environment.
+ANS:Download Flutter SDK from official website
+    Extract and set PATH in system variables
+    Install Android Studio or VS Code
+    Install Flutter & Dart plugins
+Run command:flutter doctor
+    Fix any errors shown
+
+4. Describe the basic Flutter app structure, explaining main.dart, the main function, and the widget tree.
+ANS:
+main.dart
+Main file of Flutter app.
+main() function
+Starting point of app.
+void main() {
+  runApp(MyApp());
+}
+Widget Tree
+Flutter UI is made of widgets arranged like a tree structure.
+
+Example:
+MaterialApp → Scaffold → AppBar → Body → Text
