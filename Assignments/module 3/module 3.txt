@@ -1,0 +1,38 @@
+1. Explain the difference between Stateless and Stateful widgets with examples.
+ANS:
+Flutter is developed by Google and uses widgets to build UI.
+
+Stateless Widget:
+Does not change after it is built.
+Used for static UI (text, icons, images).
+Example: Displaying a fixed welcome message.
+Once created, it cannot update automatically.
+
+Stateful Widget:
+Can change dynamically during runtime.
+Used when UI updates (button click, counter, form input).
+Example: Counter app where number increases on button press.
+It uses setState() to update the UI.
+
+2. Describe the widget lifecycle and how state is managed in Stateful widgets.
+ANS:
+In Stateful Widget, lifecycle methods control how the widget behaves.
+Important Lifecycle Methods:
+createState() – Creates state object.
+initState() – Called once when widget is created.
+build() – Builds UI (can run many times).
+setState() – Updates state and rebuilds UI.
+dispose() – Called when widget is removed.
+
+State Management:
+State is stored inside the State class.
+When setState() is called, Flutter rebuilds the widget to reflect changes.
+
+3. List and describe five common Flutter layout widgets (e.g., Container, Column, Row).
+ANS:
+Flutter uses a widget tree structure.
+1. Container:Used to add padding, margin, color, width, height.
+2. Column:Arranges widgets vertically (top to bottom).
+3. Row:Arranges widgets horizontally (left to right).
+4. Stack:Places widgets on top of each other.
+5. Expanded:Used inside Row/Column to take available space.
