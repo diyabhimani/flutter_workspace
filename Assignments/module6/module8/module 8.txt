@@ -1,0 +1,52 @@
+1.Explain the difference between local storage options (shared_preferences, SQLite, Hive).
+ANS.
+->shared_preferences:
+Stores small data in key-value form.
+Used for simple data like login status, theme mode, username.
+Cannot store complex large data.
+Very easy to use.
+
+->SQLite (sqflite):
+Uses database tables (rows & columns).
+Best for structured data like notes, tasks, student records.
+Supports SQL queries.
+Good for large and complex data.
+
+->Hive:
+NoSQL database (key-value based).
+Faster than SQLite.
+Can store objects directly.
+Simple and lightweight.
+Good for offline apps.
+
+2.Describe CRUDoperations and how they are implemented in SQLite or Hive.
+ANS.
+C → Create (Insert data)
+SQLite: insert()
+Hive: box.add()
+
+R → Read (Get data)
+SQLite: query()
+Hive: box.values
+
+U → Update (Modify data)
+SQLite: update()
+Hive: box.put()
+
+D → Delete (Remove data)
+SQLite: delete()
+Hive: box.delete()
+
+3.Explain the advantages and use cases for shared_preferences.
+ANS.
+Advantages:
+Very simple to use
+Lightweight
+Good for small data
+No database setup required
+
+Use Cases:
+Save login status
+Save theme (dark/light mode)
+Store simple settings
+Save small user preferences
