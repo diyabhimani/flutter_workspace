@@ -1,0 +1,47 @@
+1. Explain the structure and purpose of forms in Flutter.
+ANS.
+In Flutter, forms are created using the Form widget.
+It contains multiple TextFormField widgets.
+A GlobalKey<FormState> is used to manage and validate the form.
+
+Purpose:
+Collect user input (like login, registration, feedback).
+Validate data before submission.
+Manage form state easily.
+
+2. Describe how controllers and listeners are used to manage form input.
+ANS.
+->TextEditingController:Used to read and control text field values.
+Example: Get email or password value.
+
+->Listeners:Used to detect changes in text fields.
+Example: Show live validation or character count.
+
+->Controller helps to get/set text.
+->Listener helps to track changes.
+
+3. List somecommonformvalidation techniques and provide examples.
+ANS.
+->Empty Field Validation:
+
+if (value!.isEmpty) {
+  return "Field cannot be empty";
+}
+
+->Email Format Validation
+
+if (!value.contains('@')) {
+  return "Enter valid email";
+}
+
+->Password Length Validation
+
+if (value.length < 6) {
+  return "Password must be at least 6 characters";
+}
+
+->Using Validator Property
+
+validator: inside TextFormField
+
+Call formKey.currentState!.validate() before submit.
