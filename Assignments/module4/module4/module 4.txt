@@ -1,0 +1,42 @@
+1. Explain how the Navigator widget works in Flutter.
+ANS:
+The Navigator widget is used to manage screen navigation in a Flutter app.
+It works like a stack (LIFO – Last In First Out).
+When you open a new screen → it is pushed onto the stack.
+When you go back → the screen is popped from the stack.
+Common Methods:
+Navigator.push() → Open new screen
+Navigator.pop() → Go back to previous screen
+Navigator helps move between different pages of an app.
+
+2. Describe the concept of named routes and their advantages over direct route navigation.
+ANS:
+Named routes allow navigation using route names (strings) instead of directly calling a screen.
+Example: Navigator.pushNamed(context, '/home');
+
+Advantages:
+Code becomes cleaner and organized
+Easy to manage multiple screens
+Centralized route management in MaterialApp
+Better for large applications
+Named routes are more structured compared to direct navigation.
+
+3. Explain how data can be passed between screens using route arguments.
+ANS:
+Data can be passed when navigating to another screen.
+
+Method 1: Using Constructor
+Pass data directly while calling Navigator.push().
+
+Method 2: Using Route Arguments
+With named routes, you can pass arguments:
+Navigator.pushNamed(
+  context,
+  '/second',
+  arguments: "Hello",
+);
+
+In the next screen, retrieve using:
+ModalRoute.of(context)!.settings.arguments;
+
+This allows sending text, numbers, or objects between screens.
